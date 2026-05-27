@@ -3,12 +3,12 @@
 
 <table>
   <tr>
-    <td><img src="assets/tutorial/01-install-skill.png" alt="步骤一：安装 Skill" style="width100px; height:auto;"></td>
-    <td><img src="assets/tutorial/02-call-skill.png" alt="步骤二：调用 Skill" style="width:100px; height:auto;"></td>
+    <td><img src="assets/tutorial/01-install-skill.png" alt="步骤一：安装 Skill" width="200"></td>
+    <td><img src="assets/tutorial/02-call-skill.png" alt="步骤二：调用 Skill" width="200"></td>
   </tr>
   <tr>
-    <td><img src="assets/tutorial/03-fix-format.png" alt="步骤三：修改成正确格式" style="width:100px; height:auto;"></td>
-    <td><img src="assets/tutorial/04-fix-footnotes.png" alt="步骤四：修正脚注与文献" style="width:100px; height:auto;"></td>
+    <td><img src="assets/tutorial/03-fix-format.png" alt="步骤三：修改成正确格式" width="200"></td>
+    <td><img src="assets/tutorial/04-fix-footnotes.png" alt="步骤四：修正脚注与文献" width="200"></td>
   </tr>
 </table>
 这四步对应的实际工作是：先安装 skill，再让 agent 调用它；随后由 agent 按川师规则修改论文格式，最后校对页眉、交叉引用、每页重新编号的圈码脚注、页脚文献和文末参考文献的一致性。
