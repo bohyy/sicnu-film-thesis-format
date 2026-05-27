@@ -1,12 +1,23 @@
 # 川师影传毕业论文格式 Skill
+## 四步教程
 
-这是一只“守格式的小狮子”。
+<table>
+  <tr>
+    <td><img src="assets/tutorial/01-install-skill.png" alt="步骤一：安装 Skill"></td>
+    <td><img src="assets/tutorial/02-call-skill.png" alt="步骤二：调用 Skill"></td>
+  </tr>
+  <tr>
+    <td><img src="assets/tutorial/03-fix-format.png" alt="步骤三：修改成正确格式"></td>
+    <td><img src="assets/tutorial/04-fix-footnotes.png" alt="步骤四：修正脚注与文献"></td>
+  </tr>
+</table>
 
-它不替你写论文的观点，也不替你决定章节内容；它负责守住四川师范大学研究生论文格式的边界，并能把不规范的文档修改成正确格式：页边距、字体、行距、章节层级、页眉页脚、图表编号、交叉引用、圈码脚注、参考文献格式。对于戏剧与影视、广播电视、电影学、传播学、互动影视、纪录片等影传方向论文，它还会额外照看作品名、案例名和学术表达的规范性。
+这四步对应的实际工作是：先安装 skill，再让 agent 调用它；随后由 agent 按川师规则修改论文格式，最后校对页眉、交叉引用、每页重新编号的圈码脚注、页脚文献和文末参考文献的一致性。
 
+它不替你写论文的观点，也不替你决定章节内容；它负责守住四川师范大学研究生论文格式的边界，并能把不规范的文档修改成正确格式：页边距、字体、行距、章节层级、页眉页脚、图表编号、交叉引用、圈码脚注、参考文献格式。
 ## 它是什么
 
-`sicnu-film-thesis-format` 是一个 Codex skill，用来帮助 agent 按照四川师范大学 2026 版博士、硕士学位论文撰写打印要求处理影传方向毕业论文。它既可以做格式审查，也可以直接对 `.docx` 执行套版、修正和导出。
+`sicnu-film-thesis-format` 是一个修改格式的skill，用来帮助 agent 按照四川师范大学 2026 版博士、硕士学位论文撰写打印要求处理影传方向毕业论文。它既可以做格式审查，也可以直接对 `.docx` 执行套版、修正和导出。
 
 它内置了三类材料：
 
@@ -26,7 +37,6 @@
 | 交叉引用 | 检查并修正文中“如图2.1所示”“见表2.1”等引用与真实编号一致 |
 | 脚注 | 正文用 `①②③` 圈码上标；每页重新从 `①` 编号；同页页脚列出对应文献 |
 | 参考文献 | 按 GB/T 7714-2015 靠拢，和脚注文献信息保持一致 |
-| 影传文本 | 作品名用书名号，案例分析回到叙事、视听、交互、传播、接受等学术问题 |
 
 ## 怎么使用
 
@@ -86,20 +96,7 @@ mkdir -p .agent-skills && [ -d .agent-skills/sicnu-film-thesis-format ] || git c
 mkdir -p .agent-skills && [ -d .agent-skills/sicnu-film-thesis-format ] || git clone --depth 1 https://github.com/bohyy/sicnu-film-thesis-format.git .agent-skills/sicnu-film-thesis-format; printf '\n## 川师影传毕业论文格式\nWhen editing or formatting this thesis, read .agent-skills/sicnu-film-thesis-format/SKILL.md first. Use it to modify the DOCX into the correct SICNU format, including headers, cross-references, circled footnotes, figures/tables, and GB/T 7714 references.\n' >> AGENTS.md
 ```
 
-## 四步教程
 
-<table>
-  <tr>
-    <td><img src="assets/tutorial/01-install-skill.png" alt="步骤一：安装 Skill"></td>
-    <td><img src="assets/tutorial/02-call-skill.png" alt="步骤二：调用 Skill"></td>
-  </tr>
-  <tr>
-    <td><img src="assets/tutorial/03-fix-format.png" alt="步骤三：修改成正确格式"></td>
-    <td><img src="assets/tutorial/04-fix-footnotes.png" alt="步骤四：修正脚注与文献"></td>
-  </tr>
-</table>
-
-这四步对应的实际工作是：先安装 skill，再让 agent 调用它；随后由 agent 按川师规则修改论文格式，最后校对页眉、交叉引用、每页重新编号的圈码脚注、页脚文献和文末参考文献的一致性。
 
 ## 不同 agent 怎么学习这个 skill
 
