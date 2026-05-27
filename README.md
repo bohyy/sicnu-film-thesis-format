@@ -3,15 +3,14 @@
 
 <table>
   <tr>
-    <td><img src="assets/tutorial/01-install-skill.png" alt="步骤一：安装 Skill"></td>
-    <td><img src="assets/tutorial/02-call-skill.png" alt="步骤二：调用 Skill"></td>
+    <td><img src="assets/tutorial/01-install-skill.png" alt="步骤一：安装 Skill" style="width:200px; height:auto;"></td>
+    <td><img src="assets/tutorial/02-call-skill.png" alt="步骤二：调用 Skill" style="width:200px; height:auto;"></td>
   </tr>
   <tr>
-    <td><img src="assets/tutorial/03-fix-format.png" alt="步骤三：修改成正确格式"></td>
-    <td><img src="assets/tutorial/04-fix-footnotes.png" alt="步骤四：修正脚注与文献"></td>
+    <td><img src="assets/tutorial/03-fix-format.png" alt="步骤三：修改成正确格式" style="width:200px; height:auto;"></td>
+    <td><img src="assets/tutorial/04-fix-footnotes.png" alt="步骤四：修正脚注与文献" style="width:200px; height:auto;"></td>
   </tr>
 </table>
-
 这四步对应的实际工作是：先安装 skill，再让 agent 调用它；随后由 agent 按川师规则修改论文格式，最后校对页眉、交叉引用、每页重新编号的圈码脚注、页脚文献和文末参考文献的一致性。
 
 它不替你写论文的观点，也不替你决定章节内容；它负责守住四川师范大学研究生论文格式的边界，并能把不规范的文档修改成正确格式：页边距、字体、行距、章节层级、页眉页脚、图表编号、交叉引用、圈码脚注、参考文献格式。
