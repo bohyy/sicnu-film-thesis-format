@@ -18,6 +18,7 @@ description: >-
 
 - Formatting or auditing `.docx` theses for 四川师范大学 graduate submission.
 - Converting an existing thesis into 川师 2026 版格式.
+- Directly modifying a Word thesis into the correct format and saving a revised `.docx` copy.
 - Checking headings, page setup, 摘要、目录、图表、脚注、参考文献、页眉页脚.
 - Film/television/communication/drama/interactive-film theses where case titles, films, games, documentaries, platforms, and cited scholarship need consistent academic formatting.
 
@@ -63,6 +64,7 @@ Read `references/format-rules.md` before doing a full thesis formatting pass. Es
 1. **Inspect the document first.**
    - Identify current headings, figures, tables, footnotes, references, page sections, and whether there are existing manual styles.
    - Preserve user-authored content and thesis titles unless the user asks for wording changes.
+   - When asked to fix or format a document, create a revised output file instead of only giving advice.
 
 2. **Apply structure before micro-formatting.**
    - Ensure order: cover, originality/use authorization, Chinese abstract, English abstract, 目录, 绪论/正文 chapters, 结论, 参考文献, 附录, 致谢, 在校期间科研成果 if present.

@@ -1,16 +1,16 @@
 # 川师影传毕业论文格式 Skill
 
 <p align="center">
-  <img src="assets/readme-lion.svg" alt="川师影传毕业论文格式 Skill 小狮子示意图" width="860">
+  <img src="assets/tutorial/tutorial-grid.png" alt="卡通狮子四步教程：安装、调用、修改格式、修正脚注与文献" width="860">
 </p>
 
 这是一只“守格式的小狮子”。
 
-它不替你写论文的观点，也不替你决定章节内容；它负责守住四川师范大学研究生论文格式的边界：页边距、字体、行距、章节层级、图表编号、圈码脚注、参考文献格式。对于戏剧与影视、广播电视、电影学、传播学、互动影视、纪录片等影传方向论文，它还会额外照看作品名、案例名和学术表达的规范性。
+它不替你写论文的观点，也不替你决定章节内容；它负责守住四川师范大学研究生论文格式的边界，并能把不规范的文档修改成正确格式：页边距、字体、行距、章节层级、图表编号、圈码脚注、参考文献格式。对于戏剧与影视、广播电视、电影学、传播学、互动影视、纪录片等影传方向论文，它还会额外照看作品名、案例名和学术表达的规范性。
 
 ## 它是什么
 
-`sicnu-film-thesis-format` 是一个 Codex skill，用来帮助 agent 按照四川师范大学 2026 版博士、硕士学位论文撰写打印要求处理影传方向毕业论文。
+`sicnu-film-thesis-format` 是一个 Codex skill，用来帮助 agent 按照四川师范大学 2026 版博士、硕士学位论文撰写打印要求处理影传方向毕业论文。它既可以做格式审查，也可以直接对 `.docx` 执行套版、修正和导出。
 
 它内置了三类材料：
 
@@ -20,7 +20,7 @@
 
 ## 小狮子守哪几道门
 
-| 守门处 | 它会检查什么 |
+| 守门处 | 它会检查和修改什么 |
 |---|---|
 | 章节 | 使用 `第一章`、`第一节`、`一、`、`（一）`，不把章节改成 `1 / 1.1 / 1.1.1` |
 | 正文 | 小四号宋体，固定 20 磅行距，首行缩进 2 字符 |
@@ -50,6 +50,12 @@ git clone https://github.com/bohyy/sicnu-film-thesis-format.git ~/.codex/skills/
 用川师影传毕业论文格式 skill 检查这个 docx：章节不要改成阿拉伯数字，脚注用①②③圈码上标，每页重新编号。
 ```
 
+如果你要它直接修改文档：
+
+```text
+使用 sicnu-film-thesis-format skill，把这个 Word 论文修改成川师正确格式，并另存为新版 docx。
+```
+
 如果你只想查某一项：
 
 ```text
@@ -60,26 +66,20 @@ git clone https://github.com/bohyy/sicnu-film-thesis-format.git ~/.codex/skills/
 用 sicnu-film-thesis-format skill 检查第二章的图表编号和标题格式。
 ```
 
-## 圈码脚注是什么样
+## 四步教程
 
-正文中：
+<table>
+  <tr>
+    <td><img src="assets/tutorial/01-install-skill.png" alt="步骤一：安装 Skill"></td>
+    <td><img src="assets/tutorial/02-call-skill.png" alt="步骤二：调用 Skill"></td>
+  </tr>
+  <tr>
+    <td><img src="assets/tutorial/03-fix-format.png" alt="步骤三：修改成正确格式"></td>
+    <td><img src="assets/tutorial/04-fix-footnotes.png" alt="步骤四：修正脚注与文献"></td>
+  </tr>
+</table>
 
-```text
-张成关于“赛博作者”与互动电影的研究将算法纳入叙事讨论，提示互动电影中的作者性已经不只由导演或编剧承担，也与程序规则和交互机制相关。⑥
-```
-
-同一页底部：
-
-```text
-⑥张成.赛博作者与互动电影:算法的叙事与交互的作用[J].当代电影,2023(10):40-47.
-```
-
-规则重点：
-
-- 每一页脚注都重新从 `①` 开始。
-- 正文圈码必须和同页底部脚注对应。
-- 脚注可以对应参考文献，不只是解释说明。
-- 文末 `参考文献` 仍要尽量与脚注文献信息保持一致。
+这四步对应的实际工作是：先安装 skill，再让 agent 调用它；随后由 agent 按川师规则修改论文格式，最后校对每页重新编号的圈码脚注、页脚文献和文末参考文献的一致性。
 
 ## 不同 agent 怎么学习这个 skill
 
@@ -139,8 +139,13 @@ sicnu-film-thesis-format/
 ├── agents/
 │   └── openai.yaml
 ├── assets/
-│   ├── readme-lion.svg
-│   └── sicnu-2026-format-source.zip
+│   ├── sicnu-2026-format-source.zip
+│   └── tutorial/
+│       ├── 01-install-skill.png
+│       ├── 02-call-skill.png
+│       ├── 03-fix-format.png
+│       ├── 04-fix-footnotes.png
+│       └── tutorial-grid.png
 └── references/
     ├── circled-footnote-style.md
     ├── format-rules.md
@@ -150,4 +155,3 @@ sicnu-film-thesis-format/
 ## 一句话记忆
 
 这只小狮子做的事很简单：不让论文跑偏，不让格式散架，不让脚注和参考文献失联。
-
