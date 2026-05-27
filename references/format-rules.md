@@ -48,6 +48,7 @@ If a part is absent in the user's thesis, do not fabricate content unless asked.
   - Left-side page header centered: `四川师范大学博（硕）士学位论文`
   - Right-side page header centered: current chapter title/一级标题名称
   - Header rule may be a single line or upper-thick/lower-thin line.
+- When modifying a document, verify that section breaks do not accidentally reset or remove the required headers.
 
 ## 4. Fonts and Spacing
 
@@ -124,7 +125,17 @@ English abstract:
 - Formula numbers use Arabic numerals in parentheses, aligned at the right. If many formulas exist, number by chapter, e.g. `(2.1)`.
 - Long formulas may break after relation symbols or operation signs.
 
-## 10. Notes and Footnotes
+## 10. Cross-References
+
+- Check textual references after editing headings, figures, tables, formulas, footnotes, or references.
+- Figure references such as `如图2.1所示` must match an existing figure caption.
+- Table references such as `见表2.1` must match an existing table title.
+- Chapter/section references should follow the Chinese heading hierarchy, e.g. `第一章`、`第一节`, not `1.1` unless the user specifically uses Arabic chapter references in body text.
+- Footnote markers in正文 must match same-page bottom footnotes.
+- Bibliographic footnotes and final `参考文献` entries should remain mutually consistent when both are present.
+- Do not leave placeholder references such as `图?.?`, `表XX`, `见上图`, or stale numbers after inserting/deleting content.
+
+## 11. Notes and Footnotes
 
 - The source template distinguishes explanatory notes from bibliographic references, but this user's thesis convention uses bottom-of-page circled footnotes primarily for reference/source notes. Preserve that convention unless the user asks to convert all citations to bracketed in-text references.
 - Keep notes limited; do not overuse.
@@ -134,7 +145,7 @@ English abstract:
 - Footnote numbering restarts on every page: each page begins again with `①`.
 - Each正文 circled marker should have a matching same-page bottom footnote. If the footnote cites a source, keep its bibliographic elements consistent with GB/T 7714 and with the文末参考文献 list.
 
-## 11. References and Reading Lists
+## 12. References and Reading Lists
 
 - `参考文献` is the collection of sources explicitly cited in the thesis.
 - Place references after the正文/结论 on a new page.
@@ -142,7 +153,7 @@ English abstract:
 - Sources read but not cited should not be mixed into `参考文献`; if necessary, place them in an appendix titled `参考书目`.
 - Follow GB/T 7714-2015. See `reference-format.md`.
 
-## 12. Appendix and Ending
+## 13. Appendix and Ending
 
 - Appendices are optional.
 - Appendix number and appendix title each occupy one centered line above the appendix content.

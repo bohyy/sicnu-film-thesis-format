@@ -6,7 +6,8 @@ description: >-
   and film studies, interactive film, documentary, or related 影传/戏剧与影视方向论文.
   Applies the 2026 Sichuan Normal University doctoral/master thesis writing and
   printing requirements, including page setup, fonts, line spacing,
-  headers/footers, abstracts, table/figure captions, references, and notes.
+  headers/footers, abstracts, table/figure captions, cross-references,
+  references, and notes.
   Enforces two local overrides: chapter headings use Chinese hierarchy such as
   第一章/第一节/一、/（一） rather than Arabic 1/1.1; footnote markers use
   circled-number superscripts such as ①②③, not image markers.
@@ -19,7 +20,7 @@ description: >-
 - Formatting or auditing `.docx` theses for 四川师范大学 graduate submission.
 - Converting an existing thesis into 川师 2026 版格式.
 - Directly modifying a Word thesis into the correct format and saving a revised `.docx` copy.
-- Checking headings, page setup, 摘要、目录、图表、脚注、参考文献、页眉页脚.
+- Checking headings, page setup, 摘要、目录、图表、脚注、参考文献、页眉页脚、交叉引用.
 - Film/television/communication/drama/interactive-film theses where case titles, films, games, documentaries, platforms, and cited scholarship need consistent academic formatting.
 
 Primary source: `assets/sicnu-2026-format-source.zip`. Condensed rules are in `references/format-rules.md`, `references/reference-format.md`, and `references/circled-footnote-style.md`.
@@ -58,6 +59,7 @@ Read `references/format-rules.md` before doing a full thesis formatting pass. Es
 - Captions: 五号黑体. Table text and figure legends: 小五号宋体. Table notes: 六号宋体.
 - References: 五号宋体, placed after the正文 on a new page, following GB/T 7714-2015.
 - Notes/footnotes: 小五号宋体, kept at the bottom of the same page under a footnote separator line. In this user's thesis, footnotes usually carry source/reference information; do not treat bibliographic footnotes as errors.
+- Cross-references: 正文中的“如图2.1所示”“见表2.1”“第一章/第一节”等应与实际标题、图题、表题、脚注和参考文献编号一致.
 
 ## Workflow
 
@@ -73,11 +75,13 @@ Read `references/format-rules.md` before doing a full thesis formatting pass. Es
 3. **Apply page and paragraph formatting.**
    - Set margins, headers/footers, page numbering, body font, 20 pt line spacing, and first-line indent.
    - Front matter page numbers use Roman numerals; body and back matter use Arabic numerals.
+   - Set headers from the abstract page through the final page according to the SICNU rule: school thesis identifier on one side and current chapter/一级标题 on the other side.
 
 4. **Format figures and tables.**
    - Ensure each figure/table is referenced in text before or near where it appears.
    - Figure title below; table title above; use `图2.1`/`表2.1` style unless the user explicitly asks for another numbering system.
    - Prefer three-line tables for academic tables.
+   - After inserting, deleting, or renumbering figures/tables, update textual cross-references such as `如图2.1所示` and `见表2.1`.
 
 5. **Handle footnotes.**
    - Read `references/circled-footnote-style.md` when repairing or creating notes.
@@ -96,7 +100,7 @@ Read `references/format-rules.md` before doing a full thesis formatting pass. Es
    - Do not put uncited reading material into `参考文献`; if needed, put it in `附录` under `参考书目`.
 
 7. **Validate and report.**
-   - Confirm number of embedded images, figure/table captions, heading hierarchy, footnote count/style, and reference format consistency.
+   - Confirm number of embedded images, figure/table captions, heading hierarchy, page headers/footers, cross-references, footnote count/style, and reference format consistency.
    - If visual rendering tools are unavailable, say so and provide structural validation results.
 
 ## 影传方向 Style Notes
