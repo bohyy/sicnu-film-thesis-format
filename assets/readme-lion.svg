@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="360" viewBox="0 0 960 360" role="img" aria-labelledby="title desc">
+  <title id="title">川师影传毕业论文格式 Skill 狮子示意图</title>
+  <desc id="desc">一只守护论文格式的小狮子，旁边列出章节、脚注、图表、参考文献四项能力。</desc>
+  <rect width="960" height="360" fill="#fffaf0"/>
+  <rect x="24" y="24" width="912" height="312" rx="18" fill="#ffffff" stroke="#111111" stroke-width="3"/>
+
+  <g transform="translate(86 55)">
+    <circle cx="122" cy="126" r="96" fill="#f4c05e" stroke="#111111" stroke-width="4"/>
+    <g fill="#d9912b" stroke="#111111" stroke-width="3">
+      <path d="M122 18 L141 58 L103 58 Z"/>
+      <path d="M185 42 L180 86 L151 63 Z"/>
+      <path d="M221 101 L184 122 L178 85 Z"/>
+      <path d="M217 171 L178 157 L187 122 Z"/>
+      <path d="M177 219 L151 183 L181 158 Z"/>
+      <path d="M122 234 L104 195 L140 195 Z"/>
+      <path d="M67 219 L93 183 L64 158 Z"/>
+      <path d="M27 171 L66 157 L58 122 Z"/>
+      <path d="M23 101 L60 122 L66 85 Z"/>
+      <path d="M59 42 L64 86 L93 63 Z"/>
+    </g>
+    <circle cx="122" cy="126" r="62" fill="#ffe3a3" stroke="#111111" stroke-width="4"/>
+    <circle cx="99" cy="112" r="7" fill="#111111"/>
+    <circle cx="145" cy="112" r="7" fill="#111111"/>
+    <path d="M122 127 L111 141 L133 141 Z" fill="#111111"/>
+    <path d="M104 156 C114 170, 130 170, 140 156" fill="none" stroke="#111111" stroke-width="4" stroke-linecap="round"/>
+    <path d="M83 91 C91 80, 103 78, 112 84" fill="none" stroke="#111111" stroke-width="4" stroke-linecap="round"/>
+    <path d="M132 84 C143 78, 155 80, 163 91" fill="none" stroke="#111111" stroke-width="4" stroke-linecap="round"/>
+    <rect x="70" y="204" width="104" height="54" rx="8" fill="#ffffff" stroke="#111111" stroke-width="3"/>
+    <text x="122" y="239" font-family="Songti SC, SimSun, serif" font-size="24" text-anchor="middle" fill="#111111">格式</text>
+  </g>
+
+  <g font-family="Songti SC, SimSun, serif" fill="#111111">
+    <text x="360" y="84" font-size="34" font-weight="700">川师影传毕业论文格式 Skill</text>
+    <text x="360" y="126" font-size="22">像一只守门小狮子：守住格式边界，也保护你的论文气质。</text>
+  </g>
+
+  <g font-family="Songti SC, SimSun, serif" font-size="22" fill="#111111">
+    <g transform="translate(360 160)">
+      <rect width="236" height="48" rx="8" fill="#fff4d8" stroke="#111111" stroke-width="2"/>
+      <text x="20" y="31">第一章 / 第一节</text>
+    </g>
+    <g transform="translate(620 160)">
+      <rect width="236" height="48" rx="8" fill="#f7f7f7" stroke="#111111" stroke-width="2"/>
+      <text x="20" y="31">① 圈码脚注</text>
+    </g>
+    <g transform="translate(360 226)">
+      <rect width="236" height="48" rx="8" fill="#f7f7f7" stroke="#111111" stroke-width="2"/>
+      <text x="20" y="31">图2.1 / 表2.1</text>
+    </g>
+    <g transform="translate(620 226)">
+      <rect width="236" height="48" rx="8" fill="#fff4d8" stroke="#111111" stroke-width="2"/>
+      <text x="20" y="31">GB/T 7714</text>
+    </g>
+  </g>
+
+  <path d="M315 184 C330 178, 342 178, 356 184" fill="none" stroke="#111111" stroke-width="3" stroke-linecap="round"/>
+  <path d="M315 250 C330 256, 342 256, 356 250" fill="none" stroke="#111111" stroke-width="3" stroke-linecap="round"/>
+</svg>
